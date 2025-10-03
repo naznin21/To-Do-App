@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>To-Do App </title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="container" id="app">
+    <header class="header">
+      <h1>To-Do</h1>
+      <p class="subtitle">Vanilla JS • localStorage • Responsive</p>
+    </header>
+
+    <section class="card">
+      <form id="task-form" aria-label="Add new task">
+        <input id="task-input" type="text" placeholder="Add a new task..." required />
+        <button type="submit" id="add-btn">Add</button>
+      </form>
+
+      <div class="controls">
+        <select id="filter" aria-label="Filter tasks">
+          <option value="all">All</option>
+          <option value="active">Active</option>
+          <option value="completed">Completed</option>
+        </select>
+
+        <input id="search" type="search" placeholder="Search tasks..." aria-label="Search tasks" />
+      </div>
+
+      <ul id="task-list" class="task-list" aria-live="polite"></ul>
+    </section>
+
+    <footer class="footer">
+      <small>Built for learning — deploy to GitHub Pages when ready.</small>
+    </footer>
+  </main>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
